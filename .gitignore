@@ -1,0 +1,23 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Node (если появится сборка)
+node_modules/
+dist/
+.cache/
+
+# Логи и временное
+*.log
+_tmp/
+*_dump.json
+
+# Исходные материалы, которые не публикуем (реестр, выгрузки)
+/private/
+*.xlsx
