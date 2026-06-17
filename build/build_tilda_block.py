@@ -113,28 +113,7 @@ def transform(css):
 
 BODY = '''<div id="arno-catalog">
 
-  <!-- NAV -->
-  <header class="nav">
-    <a href="https://nireal.ru" class="nav-logo">
-      <img src="https://static.tildacdn.com/tild3964-3834-4065-b566-663235346131/photo.jpg" alt="Ассоциация рестораторов НО"
-        onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-      <div class="nav-logo-txt" style="display:none"><b>АРНО</b><span>Нижегородская область</span></div>
-    </a>
-    <ul class="nav-links">
-      <li><a href="https://nireal.ru/#rec277394004">О нас</a></li>
-      <li><a href="https://nireal.ru/#rec478862499">Новости</a></li>
-      <li><a href="https://nireal.ru/#rec449988712">Помощь ресторатору</a></li>
-      <li><a href="https://nireal.ru/#rec277432530">Членство</a></li>
-      <li><a href="https://nireal.ru/#rec277724048">Партнёры</a></li>
-      <li><a href="#arno-catalog" class="active">Каталог</a></li>
-    </ul>
-    <div class="nav-contact">
-      <a href="tel:+79036005060">+7 903 600 50 60</a>
-      <a href="mailto:info@arno.ru">info@arno.ru</a>
-    </div>
-  </header>
-
-  <!-- HERO -->
+  <!-- HERO (шапка не нужна — используется глобальная шапка сайта Tilda) -->
   <section class="hero">
     <div class="breadcrumb">
       <a href="https://nireal.ru">Главная</a>
