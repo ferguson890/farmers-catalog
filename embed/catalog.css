@@ -1,0 +1,164 @@
+/* Стили каталога АРНО, изолированы в #arno-catalog. */
+/* Сгенерировано build/build_tilda_block.py — вручную не править. */
+@font-face{font-family:'ProximaNova';src:url('https://static.tildacdn.com/tild3536-6662-4261-b565-636230316631/ProximaNova-Light.woff') format('woff');font-weight:300;font-style:normal;font-display:swap}
+@font-face{font-family:'ProximaNova';src:url('https://static.tildacdn.com/tild6637-3031-4031-b165-383637396130/ProximaNova-Regular.woff') format('woff');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'ProximaNova';src:url('https://static.tildacdn.com/tild3233-3339-4733-a235-383036383336/ProximaNova-Bold.woff') format('woff');font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:'ProximaNova';src:url('https://static.tildacdn.com/tild6437-3032-4565-a337-323366623833/ProximaNova-Semibold.woff') format('woff');font-weight:600;font-style:normal;font-display:swap}
+:root{--cream:   #F9F6F0;
+  --cream2:  #EFE9DF;
+  --white:   #FFFFFF;
+  --green:   #d61d1b;   
+  --greenlt: #FCEBEA;   
+  --terra:   #B5602A;
+  --ink:     #1F1A14;
+  --ink2:    #6B5E4E;
+  --ink3:    #9E9082;
+  --line:    #E2D9CC;
+  --line2:   #CBBFA8;
+  --sh:      rgba(50,35,10,.10);
+  --sh2:     rgba(50,35,10,.20);
+  --maxw:    1180px;}
+#arno-catalog, #arno-catalog *, #arno-catalog *::before, #arno-catalog *::after{box-sizing:border-box;margin:0;padding:0}
+#arno-catalog{font-family:'ProximaNova',Arial,sans-serif;background:var(--cream);color:var(--ink);font-size:16px;line-height:1.6;overflow-x:hidden}
+#arno-catalog a{text-decoration:none;color:inherit}
+#arno-catalog img{display:block;max-width:100%}
+#arno-catalog .nav{position:sticky;top:0;z-index:100;background:#fff;border-bottom:1px solid var(--line);padding:0 48px;height:68px;display:flex;align-items:center;justify-content:space-between;box-shadow:0 1px 8px var(--sh)}
+#arno-catalog .nav-logo{display:flex;align-items:center;gap:12px}
+#arno-catalog .nav-logo img{height:42px}
+#arno-catalog .nav-logo-txt{display:flex;flex-direction:column}
+#arno-catalog .nav-logo-txt b{font-family:'ProximaNova',Arial,sans-serif;font-size:18px;font-weight:700;color:var(--green);letter-spacing:.04em;line-height:1.1}
+#arno-catalog .nav-logo-txt span{font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink3)}
+#arno-catalog .nav-links{display:flex;gap:26px;list-style:none}
+#arno-catalog .nav-links a{font-size:12.5px;letter-spacing:.04em;color:var(--ink2);transition:color .2s;padding-bottom:3px;border-bottom:1.5px solid transparent}
+#arno-catalog .nav-links a:hover{color:var(--ink)}
+#arno-catalog .nav-links a.active{color:var(--green);border-bottom-color:var(--green);font-weight:700}
+#arno-catalog .nav-contact{text-align:right}
+#arno-catalog .nav-contact a{display:block;font-size:12.5px;color:var(--ink2);transition:color .2s}
+#arno-catalog .nav-contact a:hover{color:var(--green)}
+#arno-catalog .hero{background:#fff;padding:52px 48px 44px;border-bottom:1px solid var(--line);position:relative;overflow:hidden}
+#arno-catalog .hero::after{content:'';position:absolute;right:-80px;top:-60px;width:420px;height:420px;background:radial-gradient(circle,#F2C9C6 0%,transparent 65%);opacity:.3;pointer-events:none}
+#arno-catalog .breadcrumb{display:flex;gap:8px;align-items:center;font-size:12px;color:var(--ink3);margin-bottom:22px;flex-wrap:wrap}
+#arno-catalog .breadcrumb a{color:var(--ink3);transition:color .2s}
+#arno-catalog .breadcrumb a:hover{color:var(--green)}
+#arno-catalog .breadcrumb-sep{color:var(--line2);font-size:10px}
+#arno-catalog .hero-body{display:flex;align-items:flex-end;justify-content:space-between;gap:40px;flex-wrap:wrap}
+#arno-catalog .hero-eyebrow{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+#arno-catalog .hero-eyebrow-lbl{font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--green)}
+#arno-catalog .hero h1{font-family:'ProximaNova',Arial,sans-serif;font-size:clamp(32px,4vw,50px);font-weight:600;line-height:1.15;color:var(--ink);margin-bottom:14px}
+#arno-catalog .hero h1 em{font-style:italic;color:var(--green)}
+#arno-catalog .hero-desc{font-size:16px;font-weight:300;color:var(--ink2);line-height:1.7;max-width:480px}
+#arno-catalog .hero-stats{display:flex;gap:28px;flex-shrink:0;align-items:center}
+#arno-catalog .hero-stat{display:flex;flex-direction:column;gap:4px}
+#arno-catalog .hero-stat-num{font-family:'ProximaNova',Arial,sans-serif;font-size:40px;font-weight:600;color:var(--green);line-height:1}
+#arno-catalog .hero-stat-lbl{font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink3)}
+#arno-catalog .stat-sep{flex:0 0 2px;width:2px;height:40px;background:var(--line);transform:scaleX(.5);transform-origin:center;align-self:center}
+#arno-catalog .filter-bar{background:#fff;border-bottom:1px solid var(--line);padding:0 48px;position:sticky;top:68px;z-index:90}
+#arno-catalog .filter-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;max-width:var(--maxw);margin:0 auto}
+#arno-catalog .filter-tabs{display:flex;overflow-x:auto;scrollbar-width:none}
+#arno-catalog .filter-tabs::-webkit-scrollbar{display:none}
+#arno-catalog .ftab{font-family:'ProximaNova',Arial,sans-serif;font-size:12.5px;letter-spacing:.04em;color:var(--ink2);padding:16px;white-space:nowrap;border:none;background:none;cursor:pointer;position:relative;transition:color .2s}
+#arno-catalog .ftab::after{content:'';position:absolute;bottom:0;left:16px;right:16px;height:2px;background:var(--green);transform:scaleX(0);transform-origin:left;transition:transform .28s cubic-bezier(.4,0,.2,1)}
+#arno-catalog .ftab:hover{color:var(--ink)}
+#arno-catalog .ftab.on{color:var(--green);font-weight:700}
+#arno-catalog .ftab.on::after{transform:scaleX(1)}
+#arno-catalog .search-box{position:relative;padding:12px 0}
+#arno-catalog .search-ico{position:absolute;left:12px;top:50%;transform:translateY(-50%);width:14px;height:14px;stroke:var(--ink3);fill:none;stroke-width:2;pointer-events:none}
+#arno-catalog .search-input{padding:8px 14px 8px 36px;border:1px solid var(--line);background:var(--cream);font-family:'ProximaNova',Arial,sans-serif;font-size:13px;color:var(--ink);outline:none;width:240px;transition:border-color .2s,background .2s}
+#arno-catalog .search-input:focus{border-color:var(--green);background:#fff}
+#arno-catalog .search-input::placeholder{color:var(--ink3)}
+#arno-catalog .main{max-width:var(--maxw);margin:0 auto;padding:36px 48px 100px}
+#arno-catalog .results-txt{font-size:11.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);margin-bottom:28px}
+#arno-catalog .results-txt span{color:var(--green)}
+#arno-catalog .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+#arno-catalog .card{background:#fff;border:1px solid var(--line);overflow:hidden;display:flex;flex-direction:column;transition:transform .25s cubic-bezier(.2,0,.2,1),box-shadow .25s,border-color .25s}
+#arno-catalog .card:hover{transform:translateY(-5px);box-shadow:0 14px 44px var(--sh2);border-color:var(--line2)}
+#arno-catalog .card-link{display:flex;flex-direction:column;flex:1;cursor:pointer;color:inherit}
+#arno-catalog .card-photo{position:relative;height:210px;overflow:hidden;background:var(--cream2);flex-shrink:0}
+#arno-catalog .card-photo img{width:100%;height:100%;object-fit:cover;transition:transform .45s cubic-bezier(.2,0,.2,1)}
+#arno-catalog .card:hover .card-photo img{transform:scale(1.06)}
+#arno-catalog .card-photo-fallback{width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:52px;background:var(--cream2)}
+#arno-catalog .card-badge{position:absolute;bottom:12px;left:14px;background:rgba(255,255,255,.82);padding:3px 9px;font-size:10.5px;font-weight:600;letter-spacing:.01em;color:var(--ink2);display:flex;align-items:center;gap:5px;border-radius:4px;backdrop-filter:blur(3px)}
+#arno-catalog .card-body{padding:22px 22px 14px;display:flex;flex-direction:column;gap:9px;flex:1}
+#arno-catalog .card-name{font-family:'ProximaNova',Arial,sans-serif;font-size:20px;font-weight:600;color:var(--ink);line-height:1.25;transition:color .2s}
+#arno-catalog .card:hover .card-name{color:var(--green)}
+#arno-catalog .card-owner{font-size:13px;font-weight:300;color:var(--ink3);font-style:italic}
+#arno-catalog .card-district{display:flex;align-items:center;gap:6px;font-size:12.5px;color:var(--ink3)}
+#arno-catalog .card-district svg{width:12px;height:12px;stroke:var(--green);fill:none;stroke-width:2;flex-shrink:0}
+#arno-catalog .card-desc{font-size:14px;font-weight:300;color:var(--ink2);line-height:1.6}
+#arno-catalog .card-tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:auto}
+#arno-catalog .card-tag{font-size:11px;font-weight:600;letter-spacing:.06em;padding:3px 9px;background:var(--cream2);color:var(--ink2)}
+#arno-catalog .card-foot{padding:14px 22px;border-top:1px solid var(--cream2);display:flex;align-items:center;justify-content:space-between;gap:10px}
+#arno-catalog .card-phone{font-family:'ProximaNova',Arial,sans-serif;font-size:16px;font-weight:600;line-height:1;color:var(--ink);transition:color .2s}
+#arno-catalog .card-phone:hover{color:var(--green)}
+#arno-catalog .card-more{display:flex;align-items:center;gap:7px;font-size:11px;font-weight:700;line-height:1;letter-spacing:.12em;text-transform:uppercase;color:var(--ink3);transition:color .2s,gap .25s}
+#arno-catalog .card:hover .card-more{color:var(--green);gap:11px}
+#arno-catalog .card-arrow{display:inline-block;width:22px;height:1.5px;background:currentColor;position:relative}
+#arno-catalog .card-arrow::after{content:'';position:absolute;right:0;top:-3px;width:6px;height:6px;border-right:1.5px solid currentColor;border-top:1.5px solid currentColor;transform:rotate(45deg)}
+#arno-catalog .empty{grid-column:1/-1;padding:80px 0;text-align:center}
+#arno-catalog .empty-icon{font-family:'ProximaNova',Arial,sans-serif;font-size:64px;color:var(--line2);margin-bottom:16px;font-style:italic}
+#arno-catalog .empty-title{font-family:'ProximaNova',Arial,sans-serif;font-size:26px;color:var(--ink3);font-style:italic;margin-bottom:8px}
+#arno-catalog .empty-sub{font-size:14px;color:var(--line2)}
+#arno-catalog .fp{max-width:920px;margin:0 auto;padding:0 48px 90px}
+#arno-catalog .fp-cover{height:380px;background:var(--cream2);position:relative;overflow:hidden;border-radius:0 0 12px 12px}
+#arno-catalog .fp-cover img{width:100%;height:100%;object-fit:cover}
+#arno-catalog .fp-cover-fallback{width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:96px;background:linear-gradient(135deg,var(--cream2),var(--greenlt))}
+#arno-catalog .fp-head{margin-top:-60px;position:relative;background:#fff;border:1px solid var(--line);border-radius:12px;padding:30px 36px;box-shadow:0 10px 40px var(--sh)}
+#arno-catalog .fp-eyebrow{font-size:13px;font-weight:600;letter-spacing:.01em;color:var(--ink3);margin-bottom:10px}
+#arno-catalog .fp-name{font-family:'ProximaNova',Arial,sans-serif;font-size:clamp(26px,3.4vw,38px);font-weight:600;color:var(--ink);line-height:1.18;margin-bottom:6px}
+#arno-catalog .fp-owner{font-size:16px;font-weight:300;font-style:italic;color:var(--ink3);margin-bottom:20px}
+#arno-catalog .fp-meta{display:flex;gap:24px;flex-wrap:wrap;padding-top:18px;border-top:1px solid var(--cream2)}
+#arno-catalog .fp-meta-item{display:flex;align-items:flex-start;gap:8px;font-size:13.5px;color:var(--ink2);max-width:420px}
+#arno-catalog .fp-meta-item svg{width:15px;height:15px;stroke:var(--green);fill:none;stroke-width:2;flex-shrink:0;margin-top:2px}
+#arno-catalog .fp-section{margin-top:40px}
+#arno-catalog .fp-lbl{font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--green);margin-bottom:14px}
+#arno-catalog .fp-text{font-size:16.5px;font-weight:300;color:var(--ink2);line-height:1.8}
+#arno-catalog .fp-text + .fp-text{margin-top:14px}
+#arno-catalog .fp-tags{display:flex;flex-wrap:wrap;gap:8px}
+#arno-catalog .fp-tag{font-size:13px;font-weight:700;letter-spacing:.04em;padding:6px 14px;background:var(--greenlt);color:var(--green);border-radius:2px}
+#arno-catalog .fp-highlights{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+#arno-catalog .fp-highlights li{display:flex;align-items:flex-start;gap:10px;font-size:15px;font-weight:300;color:var(--ink2);line-height:1.5}
+#arno-catalog .fp-highlights li::before{content:'✓';color:var(--green);font-weight:700;flex-shrink:0}
+#arno-catalog .fp-contacts{background:#fff;border:1px solid var(--line);border-radius:10px;padding:26px 30px;display:flex;flex-direction:column;gap:16px}
+#arno-catalog .fp-phone{font-family:'ProximaNova',Arial,sans-serif;font-size:28px;color:var(--green);transition:opacity .2s}
+#arno-catalog .fp-phone:hover{opacity:.7}
+#arno-catalog .fp-row{display:flex;align-items:center;gap:10px;font-size:15px;color:var(--ink2);word-break:break-word}
+#arno-catalog .fp-row svg{width:17px;height:17px;stroke:var(--ink3);fill:none;stroke-width:2;flex-shrink:0}
+#arno-catalog .fp-row a{color:var(--green)}
+#arno-catalog .fp-row a:hover{text-decoration:underline}
+#arno-catalog .fp-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+#arno-catalog .fp-gallery img{width:100%;height:180px;object-fit:cover;border-radius:6px}
+#arno-catalog .fp-back{display:inline-flex;align-items:center;gap:8px;margin:28px 0 0;font-size:14px;font-weight:600;letter-spacing:.01em;color:var(--ink3);transition:color .2s,gap .2s}
+#arno-catalog .fp-back:hover{color:var(--green);gap:12px}
+#arno-catalog .fp-note{background:#FBF3E8;border:1px solid var(--line2);border-radius:8px;padding:14px 18px;font-size:13px;color:var(--terra);line-height:1.6}
+#arno-catalog .footer{background:#fff;border-top:1px solid var(--line);padding:28px 48px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+#arno-catalog .footer-links{display:flex;gap:20px;flex-wrap:wrap}
+#arno-catalog .footer-links a{font-size:12.5px;color:var(--ink3);transition:color .2s}
+#arno-catalog .footer-links a:hover{color:var(--green)}
+#arno-catalog .footer-right{display:flex;flex-direction:column;align-items:flex-end;gap:6px}
+#arno-catalog .footer-social{display:flex;gap:16px}
+#arno-catalog .footer-social a{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);transition:color .2s}
+#arno-catalog .footer-social a:hover{color:var(--green)}
+#arno-catalog .footer-legal{font-size:11px;color:var(--line2)}
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+#arno-catalog .card{animation:fadeUp .5s ease both}
+@media(max-width:1000px){
+#arno-catalog .grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:680px){
+#arno-catalog .nav{padding:0 20px}
+#arno-catalog .nav-links{display:none}
+#arno-catalog .hero{padding:36px 20px 32px}
+#arno-catalog .hero-stats{display:none}
+#arno-catalog .filter-bar{padding:0 20px}
+#arno-catalog .search-box{width:100%}
+#arno-catalog .search-input{width:100%}
+#arno-catalog .main{padding:24px 20px 60px}
+#arno-catalog .grid{grid-template-columns:1fr}
+#arno-catalog .fp{padding:0 20px 60px}
+#arno-catalog .fp-cover{height:240px}
+#arno-catalog .fp-head{padding:24px 20px}
+#arno-catalog .fp-highlights{grid-template-columns:1fr}
+#arno-catalog .fp-gallery{grid-template-columns:1fr 1fr}
+#arno-catalog .footer{padding:20px;flex-direction:column;align-items:flex-start}
+#arno-catalog .footer-right{align-items:flex-start}
+}

@@ -7,8 +7,9 @@
 
   // Путь к данным относительно index.html. На Tilda заменить на абсолютный URL.
   var DATA_URL = "data/farmers.json";
-  // Базовый путь к странице фермера.
-  var FARMER_PAGE = "farmer.html";
+  // Базовый путь к странице фермера. На Tilda переопределяется через
+  // window.ARNO_FARMER_PAGE (см. собранный блок), локально — farmer.html.
+  var FARMER_PAGE = (typeof window !== "undefined" && window.ARNO_FARMER_PAGE) || "farmer.html";
 
   var state = { farmers: [], categories: [], activeCat: "all", query: "" };
 
@@ -71,7 +72,6 @@
     return '<article class="card" style="animation-delay:' + delay + 'ms">' +
       '<a class="card-link" href="' + href + '">' +
         '<div class="card-photo">' + img +
-          '<span class="card-since">' + (f.since ? "с " + esc(f.since) : "") + "</span>" +
           '<div class="card-badge">' + esc(f.icon) + " " + esc(f.categoryLabel) + "</div>" +
         "</div>" +
         '<div class="card-body">' +
