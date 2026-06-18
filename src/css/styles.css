@@ -25,8 +25,8 @@
   --line2:   #CBBFA8;
   --sh:      rgba(50,35,10,.10);
   --sh2:     rgba(50,35,10,.20);
-  --maxw:    1200px;   /* как стандартная сетка Tilda — для совпадения с шапкой */
-  --gutter:  24px;     /* единый боковой отступ контента (hero/фильтр/сетка) */
+  --maxw:    1200px;   /* (оставлено для модалки) */
+  --side:    15%;      /* боковые поля контента в % — как у шапки Tilda (window-режим), чтобы левый край совпадал с логотипом на любом экране */
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
@@ -52,11 +52,11 @@ img{display:block;max-width:100%}
 /* HERO */
 .hero{background:#fff;padding:52px 0 44px;border-bottom:1px solid var(--line);position:relative;overflow:hidden}
 .hero::after{content:'';position:absolute;right:-80px;top:-60px;width:420px;height:420px;background:radial-gradient(circle,#F2C9C6 0%,transparent 65%);opacity:.3;pointer-events:none}
-.breadcrumb{display:flex;gap:8px;align-items:center;font-size:12px;color:var(--ink3);margin:0 auto 22px;padding:0 var(--gutter);width:100%;max-width:var(--maxw);flex-wrap:wrap}
+.breadcrumb{display:flex;gap:8px;align-items:center;font-size:13px;color:var(--ink3);margin:0 0 22px;padding:0 var(--side);width:100%;flex-wrap:wrap}
 .breadcrumb a{color:var(--ink3);transition:color .2s}
 .breadcrumb a:hover{color:var(--green)}
 .breadcrumb-sep{color:var(--line2);font-size:10px}
-.hero-body{display:flex;align-items:flex-end;justify-content:space-between;gap:40px;flex-wrap:wrap;max-width:var(--maxw);margin:0 auto;padding:0 var(--gutter)}
+.hero-body{display:flex;align-items:center;justify-content:space-between;gap:40px;flex-wrap:wrap;margin:0;padding:0 var(--side)}
 .hero-eyebrow{display:flex;align-items:center;gap:10px;margin-bottom:16px}
 .hero-eyebrow-lbl{font-size:14px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--green)}
 .hero h1{font-family:'ProximaNova',Arial,sans-serif;font-size:clamp(38px,5vw,68px);font-weight:700;line-height:1.08;letter-spacing:-.01em;color:var(--ink);margin-bottom:20px}
@@ -70,7 +70,7 @@ img{display:block;max-width:100%}
 
 /* FILTER BAR */
 .filter-bar{background:#fff;border-bottom:1px solid var(--line);padding:0;position:sticky;top:68px;z-index:90}
-.filter-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;max-width:var(--maxw);margin:0 auto;padding:0 var(--gutter)}
+.filter-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin:0;padding:0 var(--side)}
 .filter-tabs{display:flex;overflow-x:auto;scrollbar-width:none}
 .filter-tabs::-webkit-scrollbar{display:none}
 .ftab{font-family:'ProximaNova',Arial,sans-serif;font-size:16px;letter-spacing:.02em;color:var(--ink2);padding:20px 18px;white-space:nowrap;border:none;background:none;cursor:pointer;position:relative;transition:color .2s}
@@ -85,7 +85,7 @@ img{display:block;max-width:100%}
 .search-input::placeholder{color:var(--ink3)}
 
 /* MAIN */
-.main{max-width:var(--maxw);margin:0 auto;padding:36px var(--gutter) 100px}
+.main{margin:0;padding:36px var(--side) 100px}
 .results-txt{font-size:11.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);margin-bottom:28px}
 .results-txt span{color:var(--green)}
 
@@ -189,14 +189,14 @@ img{display:block;max-width:100%}
 /* RESPONSIVE */
 @media(max-width:1000px){.grid{grid-template-columns:1fr 1fr}}
 @media(max-width:680px){
-  :root{--gutter:20px}
+  :root{--side:20px}
   .nav{padding:0 20px}
   .nav-links{display:none}
   .hero{padding:36px 0 32px}
   .hero-stats{display:none}
   .search-box{width:100%}
   .search-input{width:100%}
-  .main{padding:24px var(--gutter) 60px}
+  .main{padding:24px var(--side) 60px}
   .grid{grid-template-columns:1fr}
   .fp{padding:0 20px 60px}
   .fp-cover{height:240px}
