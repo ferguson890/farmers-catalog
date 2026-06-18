@@ -70,17 +70,17 @@ img{display:block;max-width:100%}
 
 /* FILTER BAR */
 .filter-bar{background:#fff;border-bottom:1px solid var(--line);padding:0;position:sticky;top:68px;z-index:90}
-.filter-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin:0;padding:0 var(--side)}
-.filter-tabs{display:flex;overflow-x:auto;scrollbar-width:none}
+.filter-inner{display:flex;flex-direction:column;align-items:flex-start;gap:0;margin:0;padding:0 var(--side)}
+.filter-tabs{display:flex;overflow-x:auto;scrollbar-width:none;width:100%;border-top:1px solid var(--cream2)}
 .filter-tabs::-webkit-scrollbar{display:none}
 .ftab{font-family:'ProximaNova',Arial,sans-serif;font-size:16px;letter-spacing:.02em;color:var(--ink2);padding:20px 18px;white-space:nowrap;border:none;background:none;cursor:pointer;position:relative;transition:color .2s}
 .ftab::after{content:'';position:absolute;bottom:0;left:18px;right:18px;height:2px;background:var(--green);transform:scaleX(0);transform-origin:left;transition:transform .28s cubic-bezier(.4,0,.2,1)}
 .ftab:hover{color:var(--ink)}
 .ftab.on{color:var(--green);font-weight:700}
 .ftab.on::after{transform:scaleX(1)}
-.search-box{position:relative;padding:12px 0}
+.search-box{order:-1;position:relative;width:100%;max-width:460px;padding:14px 0}
 .search-ico{position:absolute;left:12px;top:50%;transform:translateY(-50%);width:14px;height:14px;stroke:var(--ink3);fill:none;stroke-width:2;pointer-events:none}
-.search-input{padding:11px 14px 11px 38px;border:1px solid var(--line);background:var(--cream);font-family:'ProximaNova',Arial,sans-serif;font-size:14px;color:var(--ink);outline:none;width:280px;transition:border-color .2s,background .2s}
+.search-input{padding:11px 14px 11px 38px;border:1px solid var(--line);background:var(--cream);font-family:'ProximaNova',Arial,sans-serif;font-size:14px;color:var(--ink);outline:none;width:100%;transition:border-color .2s,background .2s}
 .search-input:focus{border-color:var(--green);background:#fff}
 .search-input::placeholder{color:var(--ink3)}
 
