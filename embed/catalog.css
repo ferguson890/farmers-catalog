@@ -169,8 +169,9 @@
 #arno-catalog .fp-head{padding:24px 20px}
 #arno-catalog .fp-highlights{grid-template-columns:1fr}
 #arno-catalog .fp-gallery{grid-template-columns:1fr 1fr}
-#arno-catalog .fp-modal{padding:0;align-items:stretch}
-#arno-catalog .fp-modal-panel{max-width:none;min-height:100vh;border-radius:0;margin:0}
+#arno-catalog .fp-modal{padding:0}
+#arno-catalog .fp-modal-panel{position:fixed;inset:0;max-width:none;height:100%;min-height:0;margin:0;border-radius:0;overflow-y:auto;-webkit-overflow-scrolling:touch;animation:none}
+#arno-catalog .fp-modal-close{position:fixed}
 #arno-catalog .fpm-cover{height:210px}
 #arno-catalog .fpm-body{padding:22px 20px 30px}
 #arno-catalog .footer{padding:20px;flex-direction:column;align-items:flex-start}
