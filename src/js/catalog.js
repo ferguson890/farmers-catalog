@@ -165,7 +165,11 @@
   var modalEl = null;
   function ensureModal() {
     if (modalEl) return modalEl;
-    var root = $("arno-catalog") || document.body;
+    // Обёртка с id="arno-catalog" восстанавливает контекст стилей (#arno-catalog …),
+    // а вешаем её на <body> — чтобы position:fixed не ломался transform-родителями Tilda.
+    var wrap = document.createElement("div");
+    wrap.id = "arno-catalog";
+    wrap.setAttribute("data-arno-modal", "");
     modalEl = document.createElement("div");
     modalEl.className = "fp-modal";
     modalEl.setAttribute("hidden", "");
@@ -175,7 +179,8 @@
         '<button class="fp-modal-close" type="button" data-close="1" aria-label="Закрыть">&times;</button>' +
         '<div class="fp-modal-content"></div>' +
       "</div>";
-    root.appendChild(modalEl);
+    wrap.appendChild(modalEl);
+    document.body.appendChild(wrap);
     modalEl.addEventListener("click", function (e) {
       if (e.target.getAttribute && e.target.getAttribute("data-close")) closeModal();
     });

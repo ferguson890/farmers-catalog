@@ -203,8 +203,8 @@ img{display:block;max-width:100%}
   .fp-head{padding:24px 20px}
   .fp-highlights{grid-template-columns:1fr}
   .fp-gallery{grid-template-columns:1fr 1fr}
-  .fp-modal{padding:0}
-  .fp-modal-panel{max-width:none;min-height:100vh;border-radius:0}
+  .fp-modal{padding:0;align-items:stretch}
+  .fp-modal-panel{max-width:none;min-height:100vh;border-radius:0;margin:0}
   .fpm-cover{height:210px}
   .fpm-body{padding:22px 20px 30px}
   .footer{padding:20px;flex-direction:column;align-items:flex-start}
