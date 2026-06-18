@@ -48,14 +48,14 @@
 #arno-catalog .hero h1{font-family:'ProximaNova',Arial,sans-serif;font-size:clamp(38px,5vw,68px);font-weight:700;line-height:1.08;letter-spacing:-.01em;color:var(--ink);margin-bottom:20px}
 #arno-catalog .hero h1 em{font-style:italic;color:var(--green)}
 #arno-catalog .hero-desc{font-size:19px;font-weight:400;color:var(--ink2);line-height:1.65;max-width:620px}
-#arno-catalog .hero-stats{display:flex;gap:40px;flex-shrink:0;align-items:flex-end}
+#arno-catalog .hero-stats{display:flex;gap:40px;flex-shrink:0;align-items:stretch}
 #arno-catalog .hero-stat{display:flex;flex-direction:column;gap:6px;align-items:center;text-align:center}
 #arno-catalog .hero-stat-num{font-family:'ProximaNova',Arial,sans-serif;font-size:68px;font-weight:700;color:var(--green);line-height:.9}
 #arno-catalog .hero-stat-lbl{font-size:11px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--ink3)}
-#arno-catalog .stat-sep{flex:0 0 2px;width:2px;height:64px;background:var(--line);transform:scaleX(.5);transform-origin:center;align-self:flex-end}
+#arno-catalog .stat-sep{flex:0 0 2px;width:2px;align-self:stretch;background:var(--line);transform:scaleX(.5);transform-origin:center}
 #arno-catalog .filter-bar{background:#fff;border-bottom:1px solid var(--line);padding:0;position:sticky;top:68px;z-index:90}
 #arno-catalog .filter-inner{display:flex;flex-direction:column;align-items:flex-start;gap:0;margin:0;padding:0 var(--side)}
-#arno-catalog .filter-tabs{display:flex;overflow-x:auto;scrollbar-width:none;width:100%;border-top:1px solid var(--cream2)}
+#arno-catalog .filter-tabs{display:flex;overflow-x:auto;scrollbar-width:none;margin-left:-18px}
 #arno-catalog .filter-tabs::-webkit-scrollbar{display:none}
 #arno-catalog .ftab{font-family:'ProximaNova',Arial,sans-serif;font-size:16px;letter-spacing:.02em;color:var(--ink2);padding:20px 18px;white-space:nowrap;border:none;background:none;cursor:pointer;position:relative;transition:color .2s}
 #arno-catalog .ftab::after{content:'';position:absolute;bottom:0;left:18px;right:18px;height:2px;background:var(--green);transform:scaleX(0);transform-origin:left;transition:transform .28s cubic-bezier(.4,0,.2,1)}
@@ -64,7 +64,7 @@
 #arno-catalog .ftab.on::after{transform:scaleX(1)}
 #arno-catalog .search-box{order:-1;position:relative;width:100%;max-width:460px;padding:14px 0}
 #arno-catalog .search-ico{position:absolute;left:12px;top:50%;transform:translateY(-50%);width:14px;height:14px;stroke:var(--ink3);fill:none;stroke-width:2;pointer-events:none}
-#arno-catalog .search-input{padding:11px 14px 11px 38px;border:1px solid var(--line);background:var(--cream);font-family:'ProximaNova',Arial,sans-serif;font-size:14px;color:var(--ink);outline:none;width:100%;transition:border-color .2s,background .2s}
+#arno-catalog .search-input{padding:12px 14px 12px 40px;border:1.5px solid var(--green);background:#fff;font-family:'ProximaNova',Arial,sans-serif;font-size:14px;color:var(--ink);outline:none;width:100%;transition:border-color .2s,background .2s}
 #arno-catalog .search-input:focus{border-color:var(--green);background:#fff}
 #arno-catalog .search-input::placeholder{color:var(--ink3)}
 #arno-catalog .main{margin:0;padding:36px var(--side) 100px}
