@@ -64,7 +64,7 @@
 #arno-catalog .ftab.on::after{transform:scaleX(1)}
 #arno-catalog .search-box{order:-1;position:relative;width:100%;max-width:460px;padding:14px 0}
 #arno-catalog .search-ico{position:absolute;left:12px;top:50%;transform:translateY(-50%);width:14px;height:14px;stroke:var(--ink3);fill:none;stroke-width:2;pointer-events:none}
-#arno-catalog .search-input{padding:12px 14px 12px 40px;border:1.5px solid var(--green);background:#fff;font-family:'ProximaNova',Arial,sans-serif;font-size:14px;color:var(--ink);outline:none;width:100%;transition:border-color .2s,background .2s}
+#arno-catalog .search-input{padding:12px 14px 12px 40px;border:1px solid var(--line);background:#fff;font-family:'ProximaNova',Arial,sans-serif;font-size:14px;color:var(--ink);outline:none;width:100%;transition:border-color .2s,background .2s}
 #arno-catalog .search-input:focus{border-color:var(--green);background:#fff}
 #arno-catalog .search-input::placeholder{color:var(--ink3)}
 #arno-catalog .main{margin:0;padding:36px var(--side) 100px}
