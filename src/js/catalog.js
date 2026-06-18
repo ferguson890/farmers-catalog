@@ -72,7 +72,7 @@
     return '<article class="card" style="animation-delay:' + delay + 'ms">' +
       '<a class="card-link" href="' + href + '" data-id="' + esc(f.id) + '">' +
         '<div class="card-photo">' + img +
-          '<div class="card-badge">' + esc(f.icon) + " " + esc(f.categoryLabel) + "</div>" +
+          '<div class="card-badge">' + esc(f.categoryLabel) + "</div>" +
         "</div>" +
         '<div class="card-body">' +
           '<div class="card-name">' + esc(f.name) + "</div>" +
@@ -149,7 +149,7 @@
 
     return '<div class="fpm-cover">' + cover + "</div>" +
       '<div class="fpm-body">' +
-        '<div class="fp-eyebrow">' + esc(f.icon) + " " + esc(f.categoryLabel) + "</div>" +
+        '<div class="fp-eyebrow">' + esc(f.categoryLabel) + "</div>" +
         '<h2 class="fp-name">' + esc(f.name) + "</h2>" +
         '<div class="fp-owner">' + esc(f.owner) + "</div>" +
         '<div class="fp-meta">' + meta + "</div>" +
